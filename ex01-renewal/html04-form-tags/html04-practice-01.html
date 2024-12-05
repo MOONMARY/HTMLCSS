@@ -6,10 +6,74 @@
 </head>
 
 <body>
-    <h1>Form 태그 실습</h1>
+    <!-- Form 태그 실습-->
+    <h1>동아리 가입 신청</h1>
 
-    <p>앞서 학습한 폼 관련 태그를 이용하여 가입 폼을 작성해 봅시다.</p>
-    <p>비즈니스를 운영한다는 생각으로 서비스를 구상해 보고, 해당 비즈니스 모델에 적합한 입력 항목을 선정, 가입 폼을 작성해 봅니다.</p>
+    <form name="registerForm"
+        action="#"
+        method="post">
+        <fieldset>
+            <legend>신청자 정보</legend>
+
+            <label for="username">이름</label>
+            <input type="text" id="username" name="username"
+                placeholder="이름을 입력하세요"
+                required/><br/>
+
+            <label>성별</label>
+            <input type="radio" id="female" name="sex"
+                value="f"/>
+            <label for="female">여성</label>
+            <input type="radio" id="male" name="sex"
+                value="m"/>
+            <label for="male">남성</label><br/>
+
+            <label for="userbirth">생년월일</label>
+            <input type="date" id="userbirth" name="userbirth"
+                placeholder="사용자의 생년월일을 입력하세요"
+                required/><br/>
+
+            <label for="phonenum">핸드폰번호</label>
+            <input type="text" id="phonenum" name="phonenum"
+                placeholder="'-' 없이 입력하세요"
+                required/><br/>
+            <label for="city">거주지</label>
+            <select id="city" name="city">
+                <option value="seoul">서울</option>
+                <option value="busan">부산</option>
+                <option value="jeju">제주도</option><br/>
+            </select>
+        </fieldset>
+        <fieldset>
+            <legend>동아리 가입 신청</legend>
+            <label>* 신청할 동아리를 선택하세요</label><br/>
+            <input type="checkbox" id="dance"
+                name="club" value="dance"/>
+            <label for="dance">댄스 동아리</label><br/>
+            <input type="checkbox" id="movie"
+                name="club" value="movie"/>
+            <label for="movie">영화 동아리</label><br/>
+            <input type="checkbox" id="eat"
+                name="club" value="eat"/>
+            <label for="eat">맛집 동아리</label><br/>
+            <input type="checkbox" id="mountain"
+                name="club" value="mountain"/>
+            <label for="mountain">등산 동아리</label><br/>
+            <input type="checkbox" id="book"
+                name="club" value="book"/>
+            <label for="book">독서 동아리</label><br/><br/>
+
+            <label for="comment">* 동아리 가입 이유</label><br/>
+            <textarea id="comment" name="comment" rows="2" cols="100"
+                placeholder="간단히 작성하세요"></textarea><br/><br/>
+
+            <input type="submit" value="신청하기"/>
+            <input type="reset" value="초기화"/>
+
+
+
+        </fieldset>
+    </form>
 
 </body>
 
