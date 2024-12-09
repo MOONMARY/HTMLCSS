@@ -5,6 +5,47 @@
 <title>테이블</title>
 
 <style type="text/css" media="screen">
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	body {
+		font-family: "맑은 고딕", "돋음", sans-serif;
+		font-size: 12px;
+		color: #333;
+	}
+	.tbl-ex {
+		border: 2px solid #333;
+		margin-top: 10px;
+		margin-left: auto;
+		margin-right: auto;
+		border-collapse: collapse;
+		border-left: 0;
+		border-right: 0;
+	}
+	.tbl-ex th, .tbl-ex td {
+		border: 2px solid #333;
+		padding: 8px;
+		border-left: 0;
+		border-right: 0;
+	}
+	.tbl-ex th {
+		background-color: #999;
+		font-size: 1.1em;
+		color: #fff;
+		border-top: 2px;
+		border-bottom: 2px;
+	}
+	.tbl-ex td {
+		border-style: dotted;
+	}
+	.tbl-ex tr:hover {
+		background-color: #fc6;
+		cursor: pointer;
+	}
+	.tbl-ex tr:nth-child(2n) {
+		background-color: #E8ECF6;
+	}
 
 </style>
 </head>
