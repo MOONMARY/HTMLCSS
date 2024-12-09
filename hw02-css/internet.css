@@ -1,0 +1,43 @@
+* {
+    font-family: "맑은 고딕", "돋움", sans-serif;
+}
+
+h2 {
+    font-size: 25px;
+}
+h3 {
+    font-size: 20px;
+}
+
+h1 {
+    font-family: "궁서", sans-serif;
+    font-size: 30px;
+    letter-spacing: 15px;
+}
+.firstSpan {
+    font-weight: bold;
+    font-style: italic;
+    color: #0000FF;
+}
+.secondSpan {
+    font-weight: bold;
+    font-style: italic;
+    color: #FF0000;
+}
+.green {
+    text-decoration: underline;
+    color: #00FF00;
+}
+.milnet {
+    font-weight: bold;
+    color: #FF0000;
+}
+.num {
+    text-decoration: underline;
+}
+h3 > p {
+    text-indent: 30px;
+}
+#history p {
+    text-indent: 60px;
+}
